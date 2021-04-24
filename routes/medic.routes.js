@@ -5,4 +5,6 @@ module.exports = app => {
 
     // Create a new Medic
     router.post("/", medic.create);
+
+    app.use('/api/medic', router);
 };

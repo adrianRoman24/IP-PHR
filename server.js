@@ -31,6 +31,7 @@ app.get("/", (req, res) => {
 });
 
 require("./routes/medic.routes")(app);
+require("./routes/patient.routes")(app);
 console.log("Routes initializaed!")
 
 // set port, listen for requests
